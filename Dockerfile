@@ -1,5 +1,5 @@
 # Multi stage building strategy for reducing image size.
-FROM golang:1.16.8-alpine3.13 AS build-env
+FROM 891377022391.dkr.ecr.ap-northeast-1.amazonaws.com/sbcntr-base:golang1.16.8-alpine3.13 AS build-env
 ENV GO111MODULE=on
 RUN mkdir /app
 WORKDIR /app
@@ -24,4 +24,3 @@ FROM gcr.io/distroless/base-debian10
 COPY --from=build-env /app/main /
 EXPOSE 80
 ENTRYPOINT ["/main"]
-
