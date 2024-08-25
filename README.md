@@ -1,4 +1,4 @@
-# sbcntr-backend 
+# sbcntr-backend
 書籍用のバックエンドAPI用のダウンロードリポジトリです。
 
 ## 概要
@@ -42,8 +42,8 @@ $ go mod download
 
 - 本バックエンドAPIではDB接続があります。DB接続のために次の環境変数を設定してください。
   - DB_HOST
-  - DB_USERNAME 
-  - DB_PASSWORD 
+  - DB_USERNAME
+  - DB_PASSWORD
   - DB_NAME
 
 ### DBの用意
@@ -83,3 +83,6 @@ null
 
 ## 注意事項
 - Mac OS Bigsur 11.6でのみ動作確認しています。
+
+## CI/CD
+1
